@@ -1,0 +1,66 @@
+{
+    // 全局设置
+    "workbench.settings.applyToAllProfiles": [
+        "files.autoGuessEncoding"
+    ],
+    "editor.wordSegmenterLocales": "zh-CN",
+    "explorer.confirmDelete": false,
+    "editor.fontSize": 15,
+    "terminal.integrated.profiles.windows": {
+        "cmd UTF-8": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": [
+                "/K",
+                "chcp 65001 > nul"
+            ],
+            "overrideName": true,
+            "icon": "terminal-cmd"
+        },
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "chcp 65001 | Out-Null" //这个改编码的命令没用
+            ],
+            "overrideName": true,
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "cmd UTF-8",
+    // "terminal.integrated.fontFamily": "Consolas",
+    // "terminal.integrated.fontSize": 15,
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": true,
+    "editor.wordWrap": "on",
+    "files.autoSaveWorkspaceFilesOnly": true,
+    "editor.formatOnSave": true,
+    "editor.smoothScrolling": true,
+    "editor.cursorSmoothCaretAnimation": "on",
+    "workbench.list.smoothScrolling": true,
+    "editor.cursorBlinking": "smooth",
+    "terminal.integrated.smoothScrolling": true,
+    "window.dialogStyle": "custom",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark Pro Night Flat",
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingBrackets": "always",
+    "c-cpp-compile-run.output-location": "",
+    "files.autoGuessEncoding": true,
+    "editor.codeActionsOnSave": {},
+    "C_Cpp.clang_format_fallbackStyle": "LLVM",
+    "fittencode.languagePreference.displayPreference": "zh-cn",
+    "fittencode.languagePreference.commentPreference": "zh-cn",
+    "fittencode.selection.showCodeLens": false,
+    "terminal.integrated.focusAfterRun": "terminal",
+    "terminal.integrated.accessibleViewFocusOnCommandExecution": true,
+    "workbench.editor.empty.hint": "hidden",
+    // 禁用对.h.in 文件的自动格式化
+    "files.associations": {
+        "*.h.in": "cmake" // 让 VSCode 把 .h.in 识别为 CMake 文件
+    },
+    "[cmake]": {
+        "editor.formatOnSave": false // 关闭 CMake 文件的自动格式化
+    },
+    "git.useEditorAsCommitInput": true
+}
