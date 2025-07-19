@@ -55,30 +55,11 @@
         "sstream": "cpp",
         "*.in": "cpp"
     },
-    "terminal.integrated.profiles.windows": {
-        "cmd UTF-8": {
-            "path": "C:\\Windows\\System32\\cmd.exe",
-            "args": [
-                "/K",
-                "chcp 65001 > nul"
-            ],
-            "overrideName": true,
-            "icon": "terminal-cmd"
-        },
-        "PowerShell": {
-            "source": "PowerShell",
-            "args": [
-                "-NoExit",
-                "-Command",
-                "chcp 65001 | Out-Null" //这个改编码的命令没用
-            ],
-            "overrideName": true,
-            "icon": "terminal-powershell"
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "cmd UTF-8",
-    // "terminal.integrated.fontFamily": "Consolas",
-    // "terminal.integrated.fontSize": 15,
+    "extensions.ignoreRecommendations": true,
+    // 禁用插件
+    "extensions.disabledExtensions": [
+        "cl.keil-assistant"
+    ],
     "editor.fontSize": 15,
     "editor.smoothScrolling": true,
     "terminal.integrated.smoothScrolling": true,
@@ -87,5 +68,6 @@
     "files.encoding": "utf8",
     //"C_Cpp.clang_format_style": "file:D:/code/vsc_settings/.clang-format"
     "C_Cpp.clang_format_style": "file:.clang-format",
-    "git.useEditorAsCommitInput": true
+    "git.useEditorAsCommitInput": true,
+    "extensions.closeExtensionDetailsOnViewChange": false
 }
